@@ -1,0 +1,293 @@
+﻿/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  
+}
+
+/*enlève la cassure entre les sections / permet le dégradé de l'enfer*/
+hr {
+  display: none;
+}
+
+nav, h1, h2, h3 {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  letter-spacing: 10px;
+  font-size: 350px;  
+  font-weight: 100;
+  margin: 0 auto;
+  padding-top: 300px; 
+  color: #00D16C;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 70px;  
+  padding-bottom: 30px;
+  letter-spacing: 6px;
+  font-size: 100px;
+}
+
+.header {
+  background: url('http://95.130.12.57/jon/wildcircus/header.jpg');
+  height: 1050px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+/*menu*/
+nav {
+  background: #FFDC00;
+  height: 100px;
+  width: 100%;
+}
+
+nav ul {
+  height: 100px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: inline-block;
+  height: 100px;
+  padding: 0 60px;
+  line-height: 100px;
+  font-size: 50px;
+  text-transform: uppercase;
+  transition: background .2s; 
+  border-radius: 100%;
+}
+
+nav ul li:hover {
+  background: #1E00A3;
+  transition: background .6s; 
+}
+
+nav a:hover {
+  color: #00D16C;
+}
+
+/*style pour les 3 cartes performances*/
+li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#performances {
+  /*background-color: #F3B602;*/
+  background: linear-gradient(#FFDC00, #F58803);
+  padding-bottom: 40px;
+}
+
+#performances h2 {
+  color: #FF0000;
+}
+
+#performances h3 {  
+  letter-spacing: 2px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.clown, .magician, .tamer {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: justify;
+  background-color: #F58803;
+  border: 4px solid #FFDC00;
+  width: 300px;
+  height: 450px;
+  padding: 0px 25px;
+  margin: 0 25px;
+  line-height: 30px;
+  border-radius: 10px;  
+}
+
+/*hover des 3 cartes performances*/
+.clown:hover {
+  background-image: url('http://95.130.12.57/jon/wildcircus/clown_w350px.png');
+  background-position: center;
+  background-color: #0E004C;
+  color: #00D16C;
+  font-weight: 900;
+}
+
+.magician:hover {
+  background-image: url('http://95.130.12.57/jon/wildcircus/magician_w350px.png');
+  background-position: center;
+  background-color: #0E004C;
+  color: #00D16C;
+  font-weight: 900;
+}
+
+.tamer:hover {
+  background-image: url('http://95.130.12.57/jon/wildcircus/tamer-tiger_w350px.png');
+  background-position: center;
+  background-color: #0E004C;
+  color: #00d16c; 
+  font-weight: 900;
+}
+
+#about {
+  /*background-color: #F58803;*/
+  background: linear-gradient(#F58803, #51007E);
+  padding-bottom: 40px;
+}
+
+#about h2 {
+  color: #51007E;
+}
+
+#about h3 {
+  color: #2000A2;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.welcome {
+  display: block;
+  width: 35%;
+  text-align: justify;  
+  float: left;
+  left: 15%;
+  position: relative;
+}
+
+.family {
+  display: block;
+  width: 35%;
+  text-align: justify;
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+}
+
+.gdpr {
+  display: block;
+  width: 35%;
+  text-align: justify;
+  position: relative;
+  float: right;
+  right: 15%;
+}
+
+#prices {
+  /*background-color: #FF0000;*/
+  background: linear-gradient(#51007E, #2000A2);
+  padding-bottom: 40px;
+  padding-top: 160px;
+  
+}
+
+#prices h2 {
+  color: #F58803;
+}
+
+/*tableau des prix*/
+table {
+  margin: 0 auto;
+  width: 80%;
+  empty-cells: hide;
+  font-weight: 500;
+  font-size: 20px;
+  color: #F8F8FF; 
+}
+
+table a {
+  color: #FFFFFF;
+}
+
+table a:hover{
+  color: #FF0000;
+}
+
+thead th {
+  background: #8B075D;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+tbody th {
+  background: #8B075D;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+  background: #3C0795;  
+}
+
+#contact {
+  /*background-color: #51007E;*/
+  background: linear-gradient(#2000A2, #0E004C);
+  color: #FFDC00;
+  padding-bottom: 30px;  
+}
+
+/*formulaire de contact*/
+input, textarea {
+  background-color: #EFEFEF;
+  border-radius: 15px;
+  padding: 10px;
+  width: 40%;
+  border: 4px solid #F58803;
+  font-size: 18px;
+  margin-bottom: 10px;
+  outline: none;
+ }
+
+#send {
+  width: auto;
+  padding: 10px;
+  font-weight: 600;
+  border: none;  
+  cursor: pointer;
+  background-color: #FFDC00;
+}
+
+#send:hover {
+  background-color: #F58803;
+}
+
+textarea {
+  resize: none; 
+}
+
+footer {
+  background-color: #0E004C;
+  color: #FFDC00;
+  padding: 10px;
+  line-height: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer a {
+  color: #00D16C;
+}
